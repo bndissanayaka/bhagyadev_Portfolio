@@ -52,9 +52,32 @@ tags.forEach((btn) => {
 
 let links = document.querySelectorAll(".links");
 
+let activeUnderline = document.querySelectorAll(".active-underline-sec");
+
+let isActveLink = false;
 links.forEach((link) => {
   link.addEventListener("click", () => {
-    links.forEach((item) => item.classList.remove("active"));
-    link.classList.add("active");
+    isActveLink = true;
+    activeUnderline.forEach((item) => item.classList.remove("inactive-link"));
+    link.classList.add("inactive-link");
   });
 });
+
+let elm1 = document.querySelectorAll(".links");
+
+let elm2 = document.querySelectorAll(".active-underline-sec");
+
+for (let i = 0; i < elm1.length; i++) {
+  for (let j = 0; j < elm2.length; j++) {
+    if ((i === j)) {
+    
+      elm1[i].addEventListener("mouseover", () => {
+        elm2[i].style.display = "flex";
+      });
+
+      elm1[i].addEventListener("mouseout", () => {
+        elm2[i].style.display = "none";
+      });
+    }
+  }
+}
