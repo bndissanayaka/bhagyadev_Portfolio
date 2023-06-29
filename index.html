@@ -5,20 +5,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <!-- linking css file -->
   <link rel="stylesheet" href="style.css" />
-  <!-- bootstrap CDN -->
-  <!-- <link
-    href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
-    rel="stylesheet"
-  />
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script> -->
-  <!-- Roboto font -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"
-    rel="stylesheet"
-  />
+ 
+
+   
+  <!--  font -->
+  
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kalam:wght@300&display=swap" rel="stylesheet">
+
   <body>
+    
     <!-- nav bar -->
     <nav class="navbar">
       <h1 class="logo">Bhagya's Portfolio</h1>
@@ -57,15 +55,21 @@
         </li>
       </ul>
     </nav>
+
+
     <!-- header -->
     <header class="header" id="home-section">
       <div class="header-content">
         <h1 class="header-heading">
-          Hey, I am
+          <span class="header-heading-color">Hi,</span> I'm
           <span class="brand-name">Bhagya <span>Dissanayaka</span></span>
-          <span class="brand-job">I'm a Frontend Developer</span>
+          <div class="brand-job">
+            <hr class="brand-job-hr"/>
+            <div class="brand-job-txt">Front-end developer</div>
+          </div>
+          <div class="header-tagline">"I create responsive, cross-browser websites you'd love to experience"</div>
         </h1>
-        <a href="#" class="btn">Hire</a>
+        <!-- <a href="#" class="btn">Hire</a> -->
       </div>
 
       <div class="header-img-container">
@@ -78,11 +82,19 @@
 
     <section id="about-section">
       <h1 class="heading">about me</h1>
+
+    <div class="lv-pointer-cont">
+      <div class="lv-pointer-col">
+        <div class="lv-pointer-line1"></div>
+        <div class="lv-pointer-line2"></div>
+        <div class="lv-pointer-text">Yes, it's me!</div>
+      </div>
+    </div>
+
       <!-- about -->
       <div class="about-container">
         <div class="image-container">
-          <div class="square"></div>
-          <img src="img/bhagya.png" class="about-img" alt="" />
+          <img src="img/bhagya2.jpg" class="about-img" alt="" />
           <div class="social-links">
             <a href="#"
               ><img src="img/github.png" class="social-img" alt=""
@@ -99,18 +111,14 @@
         <!-- info part -->
         <div class="info">
           <p>
-            I'm a passionate front-end developer with 6+ years of overall experience
-            in software development. I am eager to contribute to team success
-            through hard work, attention to detail and with excellent communication
-            skills. I have experience in developing web sites
-            using HTML, CSS, JavaScript, ReactJS , Redux and Java 8+. I love translating solutions
+            I'm a front-end developer based in Colombo, SL. with 6+ years of overall experience
+            in software development.  I use  ReactJS, JavaScript, CSS, HTML, Redux and Java 8+ to develop websites. I love translating solutions
             into code and working across many different APIs, third-party
-            integrations and databases. I am fast at learning and mastering new
-            technologies. Over the years I have been working successfully in both team and self-directed
-            settings with local and international teams.
+            integrations and databases. 
           </p>
-          <a href="#" class="btn">hire me</a>
-          <a href="#" class="btn">download CV</a>
+          <!-- <a href="#" class="btn">hire me</a> -->
+          <a class="btn" href="./documents/Resume-BhagyaNirmani.pdf" title="" download>download CV</a>
+         
         </div>
       </div>
 
@@ -118,10 +126,10 @@
       <h2 class="sub-heading">skills</h2>
 
       <div class="skills">
-        <p class="skill-name">HTML</p>
-        <p class="skill-name">CSS</p>
-        <p class="skill-name">JavaScript</p>
         <p class="skill-name">React.js</p>
+        <p class="skill-name">JavaScript</p>
+        <p class="skill-name">CSS</p>
+        <p class="skill-name">HTML</p>
         <p class="skill-name">MongoDB</p>
         <p class="skill-name">REST API</p>
         <p class="skill-name">PLSQL</p>
@@ -131,24 +139,18 @@
 
       <!-- time line -->
 
-      <h2 class="sub-heading">education and experiences</h2>
+      <h2 class="sub-heading">experiences and education  </h2>
 
       <div class="timeline-container">
         <div class="card-container">
           <div class="card">
-            <h1 class="card-title"> Senior Software Engineer (Jan 2023 - Present)
-            </br>
-              Software Engineer (March 2022 -Jan 2023)
+            <h1 class="card-title"> Senior Software Engineer (Jan 2023 - Present)      </br>
+              Software Engineer (March 2022 -Jan 2023) </br> Lassana.com (Pvt) Ltd , Colombo, SL    </br> 
             </br></h1>
+            <br/>
             <p class="card-body">
-              Lassana.com (Pvt) Ltd    
-          </br>
-            -Developing responsive and cross-browser websites from UI/UX design, including various functionalities and design
-            implementation, using HTML, CSS, and ReactJS.<br/>
-            -Collaborating with design team members to implement new features and improve website functionality.<br/>
-            -Identified and resolved website performance issues to ensure optimal user experience.<br/>
-            -Created various CSS and JS animations to enhance the user experience.<br/>
-            -Improved site speed through optimization of images and reduction of HTTP requests.
+             
+           ReactJs | JavaScript | HTML | CSS | Redux
             </p>
           </div>
         </div>
@@ -156,69 +158,53 @@
           <div class="card">
             <h1 class="card-title">Technical Writer (Jan 2020 - Dec 2021) </h1>
             <p class="card-body">
-             Freelancer
-            </br>
-            Worked part-time as a technical/assignment writer, completing Master's and Bachelor's degree assignments. <br/>
-            Main subject areas I involved with are, Information Technology, Networking, Information Security, Cyber and Network Security, Database Management Systems, 
-            <br/>International Relations, Research Writing and Computer Programming.
+            Technical/assignment writer, completing Master's and Bachelor's degree assignments.          
             </p>
           </div>
         </div>
         <div class="card-container">
           <div class="card">
-            <h1 class="card-title">Software Engineer (July 2018 - February 2019) </h1>
+            <h1 class="card-title">Software Engineer (July 2018 - February 2019)<br/>  Shipxpress a Kaleris Company, Colombo, SL </h1>
             <p class="card-body">
-              Shipxpress a Kaleris Company
-            </br>
-              -Shipxpress (A Kaleris company) was a GE Transportation company and was later merged with Wabtec in
-               February 2019.<br/>
-              -Troubleshooting technical issues in server-side developments involving java/spring implementations.<br/>
-              -Proficiently collaborated with multinational teams in USA and India.<br/>
-              -Worked closely with business analysts, development teams and infrastructure specialists to deliver high
-               quality products as a Software Engineer.<br/>
-              -Analyzed proposed technical solutions based on customer requirements, budget and product goal.<br/>
-              -Working in a Scrum Team and practicing all major scrum ceremonies and following agile methodologies
+             
+            
+              Java | Spring MVC | Ionic | Angular | Couchbase 
             </p>
           </div>
         </div>
         <div class="card-container">
           <div class="card">
-            <h1 class="card-title">Associate Software Engineer (February 2017 - March 2018) </h1>
+            <h1 class="card-title">Associate Software Engineer (February 2017 - March 2018) <br/> Synergen Health Solutions LLC, Nawala, SL  </h1><br/>
             <p class="card-body">
-              -Worked as a backend software engineer Java/JEE in two projects; Synergen Billing Interface and SynegenPay Platform. <br/>
-              -Implemented a producer consumer pattern as part of the project implementation. <br/>
-              -Troubleshooted issues in the code base and fixed bugs reported by QA engineers.<br/>
+              Java | Spring MVC | Spring Boot | Mongo DB  
             </p>
           </div>
         </div>
         <div class="card-container">
           <div class="card">
-            <h1 class="card-title">Software Developer (December 2014 - December 2016)</h1>
+            <h1 class="card-title">Software Developer (December 2014 - December 2016) <br/> IFS R&D International (Pvt) Ltd, Colombo, SL </h1><br/> 
             <p class="card-body">
-              - Worked as a software engineer in North America Consulting team providing customization and maintenance support for IFS ApplicationsTM . <br/>
-              - Received company training C#, .NET Framework, PLSQL. <br/>
-              - Experienced in PLSQL, Centura. <br/>
-              - Job responsibilities included analyzing functional specifications, preparing designs and developing customizations, performing technical investigations, installing RND patches and Standard bug fixes, creating
-                and sending deliveries of patches and customizations to customers.  <br/>
+               PLSQL | Centura | Oracle DB   
             </p>
           </div>
         </div>
         <div class="card-container">
           <div class="card">
-            <h1 class="card-title">PGDip, in Computer Science</h1><br/>
+            <h1 class="card-title"> University of Colombo School of Computing, Colombo, SL </h1>
             <p class="card-body">
-              University of Colombo School of Computing <br/>
-              2017 - 2019 <br/>
+             
+              PGDip, in Computer Science  (2017 - 2019)
+           
               
             </p>
           </div>
         </div>
         <div class="card-container">
           <div class="card">
-            <h1 class="card-title">Bsc. (Hons.) in Information Technology</h1><br/>
+            <h1 class="card-title"> University of Moratuwa, Faculty of IT , Moratuwa, SL  </h1>
             <p class="card-body">
-              University of Moratuwa, Faculty of IT <br/>
-              2010 - 2014 <br/>
+             
+             Bsc. (Hons.) in Information Technology (2010 - 2014). <br/>
               A 4 year honours degree with a final year research project.
             </p>
           </div>
@@ -228,12 +214,12 @@
 
     <section id="project-section">
       <h1 class="heading">Projects</h1>
-      <div class="filter">
+      <!-- <div class="filter">
           <button class="btn filter-btn active">all</button>
           <button class="btn filter-btn">css</button>
           <button class="btn filter-btn">javascript</button>
-          <button class="btn filter-btn">fullstack</button>
-      </div>
+          <button class="btn filter-btn">ReactJS</button>
+      </div> -->
   
       <!--  project cards -->
   
@@ -242,7 +228,7 @@
               <div class="project-wrapper">
                   <div class="project-thumbnail">
                       <img src="img/close.png" class="close-btn" alt="">
-                      <img src="img/project-1.png" class="project-img" alt="">
+                      <img src="img/PROJ1.png" class="project-img" alt="">
                       <span class="tags">#javascript, #css, #fullstack</span>
                   </div>
   
@@ -260,7 +246,7 @@
 
     <!-- contact section -->
     <section id="contact-section">
-      <h1 class="heading">contact</h1>
+      <h1 class="heading" id="contact-heading">contact</h1>
       <div class="form">
           <input type="text" placeholder="name">
           <input type="email" placeholder="email">
@@ -272,5 +258,7 @@
     <!-- load javascript after loading all html content -->
     <script src="/project.js"></script>
     <script src="/script.js"></script>
+    
+   
   </body>
 </html>
