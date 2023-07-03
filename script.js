@@ -4,15 +4,17 @@ let projects = document.querySelectorAll(".project-card");
 
 projects.forEach((card, index) => {
   let closeBtn = card.querySelector(".close-btn");
+
   closeBtn.addEventListener("click", () => {
     projects.forEach((item, i) => {
       item.classList.remove("blur");
     });
+
     card.classList.remove("active");
   });
 
   card.addEventListener("click", (e) => {
-    if (e.composedPath[0] != closeBtn) {
+    if (e.composedPath()[0] != closeBtn) {
       projects.forEach((item, i) => {
         if (i != index) {
           item.classList.add("blur");
@@ -69,8 +71,7 @@ let elm2 = document.querySelectorAll(".active-underline-sec");
 
 for (let i = 0; i < elm1.length; i++) {
   for (let j = 0; j < elm2.length; j++) {
-    if ((i === j)) {
-    
+    if (i === j) {
       elm1[i].addEventListener("mouseover", () => {
         elm2[i].style.display = "flex";
       });
@@ -82,3 +83,64 @@ for (let i = 0; i < elm1.length; i++) {
   }
 }
 
+//contact message delivered popup
+let popup = document.getElementsByClassName("email-successmsg-cont");
+
+function openPopup() {
+  popup[0].classList.add("open-popup");
+}
+
+function closePopup() {
+  popup[0].classList.remove("open-popup");
+}
+
+//emiljs message sending function
+
+(function () {
+  emailjs.init("_ugZTbOcDOnaFPHj_");
+})();
+
+// listen to the form submission
+document.getElementById("myForm").addEventListener("submit", function (event) {
+  event.preventDefault();
+
+  const serviceID = "service_lbaydpa";
+  const templateID = "template_wwht3ir";
+
+  // send the email here
+  emailjs.sendForm(serviceID, templateID, this).then(
+    (response) => {
+      openPopup();
+    },
+    (error) => {}
+  );
+});
+
+//scroll to top on click the bottom arrow
+
+function scrollToTop() {
+  window.scrollTo({ top: 0, behavior: "smooth" });
+}
+
+document.addEventListener("click", (evt) => {
+  let flyoutEl = document.getElementById("project-wrapper");
+
+  let targetEl = evt.target; // clicked element
+  do {
+    if (targetEl == flyoutEl) {
+      // This is a click inside, does nothing, just return.
+
+      return;
+    }
+    // Go up the DOM
+
+    targetEl = targetEl.parentNode;
+  } while (targetEl);
+  // This is a click outside.
+  projects.forEach((card, index) => {
+    card.classList.remove("blur");
+    card.classList.remove("active");
+  });
+
+  // document.getElementById("project-wrapper").textContent = "Clicked outside!";
+});
