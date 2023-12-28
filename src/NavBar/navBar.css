@@ -1,0 +1,131 @@
+.lv-navbar-wrapper {
+  width: 90%;
+  height: 4vw;
+  margin-left: 5%;
+  margin-right: 5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  background-color: black;
+  opacity: 1;
+}
+
+.lv-navbar-col1 {
+  width: 70%;
+  height: auto;
+  text-align: left;
+  font-family: "SF UI Text", "Helvetica Neue", "Segoe UI", "Oxygen", "Ubuntu",
+    "Cantarell", "Open Sans", sans-serif;
+  font-size: 2.5vw;
+  color: white;
+  text-transform: capitalize;
+}
+
+.lv-navbar-col2 {
+  width: 30%;
+  height: auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  font-family: "SF UI Text", "Helvetica Neue", "Segoe UI", "Oxygen", "Ubuntu",
+    "Cantarell", "Open Sans", sans-serif;
+  color: white;
+  font-size: 1vw;
+}
+.lv-navbar-col2col1,
+.lv-navbar-col2col2,
+.lv-navbar-col2col3,
+.lv-navbar-col2col4 {
+  width: 5vw;
+  padding-bottom: 2%;
+  border-bottom: 2px solid black;
+}
+
+.lv-navbar-col2col1:hover,
+.lv-navbar-col2col2:hover,
+.lv-navbar-col2col3:hover,
+.lv-navbar-col2col4:hover {
+  border-bottom: 2px solid white;
+}
+
+.flip_text {
+  color: rgba(155, 144, 144, 0.5);
+  background: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    from(#222),
+    to(#222),
+    color-stop(0.8, #fff)
+  );
+  background: -moz-gradient(
+    linear,
+    left top,
+    right top,
+    from(#222),
+    to(#222),
+    color-stop(0.8, #fff)
+  );
+  background: gradient(
+    linear,
+    left top,
+    right top,
+    from(#222),
+    to(#222),
+    color-stop(0.8, #fff)
+  );
+  -webkit-background-size: 125px 100%;
+  -moz-background-size: 125px 100%;
+  background-size: 125px 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  -webkit-animation-name: flip_text;
+  -moz-animation-name: flip_text;
+  animation-name: flip_text;
+  -webkit-animation-duration: 2s;
+  -moz-animation-duration: 2s;
+  animation-duration: 2s;
+  -webkit-animation-iteration-count: infinite;
+  -moz-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-color: #222;
+}
+
+@-moz-keyframes flip_text {
+  0% {
+    background-position: top left;
+  }
+  100% {
+    background-position: top right;
+  }
+}
+
+@-webkit-keyframes flip_text {
+  0% {
+    background-position: top left;
+  }
+  100% {
+    background-position: top right;
+  }
+}
+
+@-o-keyframes flip_text {
+  0% {
+    background-position: top left;
+  }
+  100% {
+    background-position: top right;
+  }
+}
+
+@keyframes flip_text {
+  0% {
+    background-position: top left;
+  }
+  100% {
+    background-position: top right;
+  }
+}

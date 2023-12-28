@@ -1,0 +1,103 @@
+.lv-contact-wrapper {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 5vw 0 2vw 0;
+}
+
+.lv-contact-row2 {
+  color: white;
+  font-family: "SF UI Text", "Helvetica Neue", "Segoe UI", "Oxygen", "Ubuntu",
+    "Cantarell", "Open Sans", sans-serif;
+  font-size: 1.2vw;
+  margin-bottom: 3vw;
+}
+
+.lv-contact-fieldLbl {
+  color: white;
+  font-family: "SF UI Text", "Helvetica Neue", "Segoe UI", "Oxygen", "Ubuntu",
+    "Cantarell", "Open Sans", sans-serif;
+  font-size: 1.3vw;
+  margin: 0 5% 0 5%;
+  width: 90vw;
+  text-align: left;
+  margin-bottom: 1vw;
+  margin-top: 1vw;
+}
+
+.lv-contact-form {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.lv-contact-field {
+  width: 50vw;
+  margin: 0 5% 0 5%;
+  height: 3vw;
+  color: grey;
+  font-family: "SF UI Text", "Helvetica Neue", "Segoe UI", "Oxygen", "Ubuntu",
+    "Cantarell", "Open Sans", sans-serif;
+  font-size: 1.2vw;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  padding-left: 1%;
+}
+
+.lv-contact-field:focus {
+  border: none;
+  outline: none;
+  padding-left: 1%;
+}
+
+.lv-contact-fieldSubmit {
+  color: white;
+  font-family: "SF UI Text", "Helvetica Neue", "Segoe UI", "Oxygen", "Ubuntu",
+    "Cantarell", "Open Sans", sans-serif;
+  font-size: 1.2vw;
+  background-color: red;
+  padding: 1vw;
+  border-radius: 5px;
+  margin: 2% 5% 0 5%;
+  border: none;
+  outline: none;
+}
+
+.lv-contact-fieldSubmit:hover {
+  background-color: rgb(167, 41, 41);
+}
+
+.lv-contact-fieldarea {
+  width: 50vw;
+  margin: 0 5% 0 5%;
+  color: grey;
+  font-family: "SF UI Text", "Helvetica Neue", "Segoe UI", "Oxygen", "Ubuntu",
+    "Cantarell", "Open Sans", sans-serif;
+  font-size: 1.2vw;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  padding-left: 1%;
+}
+
+.lv-contact-fieldarea:focus {
+  border: none;
+  outline: none;
+  padding-left: 1%;
+}
+
+.lv-details-errormsg {
+  margin: 0 5% 0 5%;
+  font-size: 1vw;
+  color: red;
+  margin-top: 1%;
+  font-family: "SF UI Text", "Helvetica Neue", "Segoe UI", "Oxygen", "Ubuntu",
+    "Cantarell", "Open Sans", sans-serif;
+}

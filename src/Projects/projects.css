@@ -1,0 +1,122 @@
+.lv-projects-wrapper {
+  width: 90%;
+  height: auto;
+  background-color: black;
+  display: grid;
+  margin: 0 5% 0 5%;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 2vw;
+}
+
+.lv-projects-col1,
+.lv-projects-col2 {
+  width: 95%;
+  height: 20vw;
+  display: grid !important;
+  grid-template: 1fr / 1fr !important;
+}
+
+.lv-projects-col1 > * {
+  grid-column: 1 / 1;
+  grid-row: 1 / 1;
+}
+
+.lv-projects-col2 > * {
+  grid-column: 1 / 1;
+  grid-row: 1 / 1;
+}
+
+.lv-projects-col1 .lv-projects-col1layer1 {
+  z-index: 1;
+}
+
+.lv-projects-col1 .lv-projects-col1layer2 {
+  z-index: 2;
+}
+
+.lv-projects-col2 .lv-projects-col1layer1 {
+  z-index: 1;
+}
+
+.lv-projects-col2 .lv-projects-col1layer2 {
+  z-index: 2;
+}
+
+.lv-projects-proj1 {
+  border-radius: 15px;
+  border: 1px solid rgb(139, 138, 138);
+}
+
+.lv-projects-col1layer2 {
+  width: 95%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  font-family: "SF UI Text", "Helvetica Neue", "Segoe UI", "Oxygen", "Ubuntu",
+    "Cantarell", "Open Sans", sans-serif;
+  font-size: 1.2vw;
+}
+
+.lv-projects-col1layer1 {
+  width: 95%;
+}
+
+.lv-projects-col1layer2txt2 {
+  color: white;
+  font-weight: 600;
+}
+
+.lv-projects-col1layer2txt1 {
+  width: 95%;
+  text-align: left;
+  color: white;
+  font-weight: 600;
+  margin-top: 8vw;
+  margin-left: 5vw;
+}
+
+.lv-projects-link1 {
+  width: 95%;
+  text-align: left;
+  text-decoration: none;
+  margin-right: 5vw;
+}
+
+.lv-projects-col1layer2txt2 {
+  width: 95%;
+  margin: 0;
+  text-align: left;
+  margin-left: 5vw;
+  font-size: 0.9vw;
+}
+
+.lv-projects-col1layer2txt3 {
+  width: 95%;
+  margin: 0;
+  text-align: left;
+}
+
+.lv-projects-col1layer2txtx {
+  width: 60%;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-right: 25%;
+  margin-top: 2%;
+}
+
+.lv-projects-col1layer2txt3 {
+  font-size: 0.8vw;
+  color: white;
+  background-color: rgb(90, 89, 89);
+  text-transform: capitalize;
+  font-weight: 600;
+  margin: 0 2% 0 2%;
+  width: auto;
+  padding: 1% 2% 1% 2%;
+  text-align: center;
+  border-radius: 10px;
+}

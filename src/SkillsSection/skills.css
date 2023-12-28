@@ -1,0 +1,51 @@
+.lv-skillsSec-wrapper {
+  width: 100%;
+  height: auto;
+  background-color: black;
+  margin-bottom: 5vw;
+}
+
+.lv-skillsSec-container {
+  width: 90%;
+  margin: 0 5% 0 5%;
+  height: 15vw;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: black;
+  color: black;
+  font-family: "SF UI Text", "Helvetica Neue", "Segoe UI", "Oxygen", "Ubuntu",
+    "Cantarell", "Open Sans", sans-serif;
+  font-size: 1.2vw;
+}
+
+.lv-skillsSec-title {
+  background-color: black;
+  color: white;
+  font-family: "SF UI Text", "Helvetica Neue", "Segoe UI", "Oxygen", "Ubuntu",
+    "Cantarell", "Open Sans", sans-serif;
+  font-size: 2.5vw;
+  text-align: center;
+}
+
+.lv-skillsSec-box1,
+.lv-skillsSec-box2,
+.lv-skillsSec-box3,
+.lv-skillsSec-box4,
+.lv-skillsSec-box5,
+.lv-skillsSec-box6,
+.lv-skillsSec-box7,
+.lv-skillsSec-box8,
+.lv-skillsSec-box9,
+.lv-skillsSec-box10,
+.lv-skillsSec-box11 {
+  width: 9vw;
+  height: 4vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  margin: 0 2% 0 2%;
+  border-radius: 10px;
+}

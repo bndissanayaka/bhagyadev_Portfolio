@@ -1,0 +1,206 @@
+.lv-about-wrapper {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  background-color: black;
+  padding-bottom: 5vw;
+}
+
+.lv-about-row1 {
+  color: white;
+  font-family: "SF UI Text", "Helvetica Neue", "Segoe UI", "Oxygen", "Ubuntu",
+    "Cantarell", "Open Sans", sans-serif;
+  font-size: 2.5vw;
+  text-align: center;
+  margin-bottom: 3vw;
+  padding-top: 5vw;
+  text-transform: capitalize;
+}
+
+.lv-about-row2 {
+  width: 90%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin: 0 5% 0 5%;
+}
+
+.lv-about-row2col1 {
+  width: 100%;
+  height: auto;
+  color: white;
+  font-family: "SF UI Text", "Helvetica Neue", "Segoe UI", "Oxygen", "Ubuntu",
+    "Cantarell", "Open Sans", sans-serif;
+  font-size: 1.2vw;
+  display: flex;
+  flex-direction: column;
+  margin-left: 10vw;
+  text-transform: capitalize;
+}
+
+.lv-about-row2col2 {
+  display: flex;
+  flex-direction: column;
+  padding-top: 6vw;
+  margin-right: 5vw;
+}
+.lv-about-row2col2txt {
+  color: white;
+  font-family: "SF UI Text", "Helvetica Neue", "Segoe UI", "Oxygen", "Ubuntu",
+    "Cantarell", "Open Sans", sans-serif;
+  font-size: 1.2vw;
+  line-height: 3vw;
+  text-align: left;
+}
+.lv-about-row2col12 {
+  color: white;
+  font-family: "SF UI Text", "Helvetica Neue", "Segoe UI", "Oxygen", "Ubuntu",
+    "Cantarell", "Open Sans", sans-serif;
+  font-size: 1.2vw;
+  text-align: left;
+  height: 3vw;
+  margin-bottom: 2vw;
+  margin-left: 1vw;
+}
+
+.lv-about-row2col1x {
+  height: 5vw;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-left: 9vw;
+}
+
+.lv-about-row2col2btn {
+  width: 13vw;
+  padding: 0.8vw;
+  background-color: red;
+  color: white;
+  font-family: "SF UI Text", "Helvetica Neue", "Segoe UI", "Oxygen", "Ubuntu",
+    "Cantarell", "Open Sans", sans-serif;
+  font-size: 1.2vw;
+  transform: skew(-10deg);
+  text-align: center;
+  text-decoration: none;
+  border-radius: 10px;
+}
+
+.lv-about-row2col2btn :hover {
+  background-color: rgb(167, 41, 41);
+}
+
+.lv-about-row2col11 {
+  width: 4vw;
+  height: 3vw;
+  border-top: 1px solid white;
+  border-left: 2px solid red;
+  transform: skew(-20deg);
+}
+
+.lv-about-row2col11 :hover {
+  background-color: rgb(167, 41, 41);
+}
+
+.lv-about-row2col13 {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  margin-right: 5vw;
+  margin-bottom: 5vw;
+}
+
+.lv-about-row2col13img {
+  width: 19vw;
+  border-radius: 10px;
+}
+
+.lv-about-row2col14 {
+  width: 19vw;
+}
+
+.social-img {
+  width: 4vw;
+}
+
+.flip_text2 {
+  color: rgba(155, 144, 144, 0.5);
+
+  background: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    from(#222),
+    to(#222),
+    color-stop(0.8, #fff)
+  );
+  background: -moz-gradient(
+    linear,
+    left top,
+    right top,
+    from(#222),
+    to(#222),
+    color-stop(0.8, #fff)
+  );
+  background: gradient(
+    linear,
+    left top,
+    right top,
+    from(#222),
+    to(#222),
+    color-stop(0.8, #fff)
+  );
+  -webkit-background-size: 125px 100%;
+  -moz-background-size: 125px 100%;
+  background-size: 125px 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  -webkit-animation-name: flip_text2;
+  -moz-animation-name: flip_text2;
+  animation-name: flip_text2;
+  -webkit-animation-duration: 3s;
+  -moz-animation-duration: 3s;
+  animation-duration: 3s;
+  -webkit-animation-iteration-count: infinite;
+  -moz-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-color: #222;
+}
+
+@-moz-keyframes flip_text2 {
+  0% {
+    background-position: top left;
+  }
+  100% {
+    background-position: top right;
+  }
+}
+
+@-webkit-keyframes flip_text2 {
+  0% {
+    background-position: top left;
+  }
+  100% {
+    background-position: top right;
+  }
+}
+
+@-o-keyframes flip_text2 {
+  0% {
+    background-position: top left;
+  }
+  100% {
+    background-position: top right;
+  }
+}
+
+@keyframes flip_text2 {
+  0% {
+    background-position: top left;
+  }
+  100% {
+    background-position: top right;
+  }
+}
